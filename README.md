@@ -1,0 +1,1 @@
+This project builts flask api from scratch and show the data for others to use it 
