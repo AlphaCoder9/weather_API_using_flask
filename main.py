@@ -1,11 +1,14 @@
 import pandas as pandas
 from flask import Flask, render_template
 import pandas as pd
+
 app = Flask(__name__)
 
 # Adding Stations from station file to render it on HTML
 stations = pd.read_csv("data_small/stations.txt", skiprows=17)
 stations = stations[["STAID", "STANAME                                 "]]
+
+
 # Adding app route method using decorator
 @app.route("/")
 def Home():
